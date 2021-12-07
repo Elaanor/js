@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: transparent;
+        }
+        html{
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+   <script>
+       let dogumYili = prompt("Doğum yılını giriniz:");
+       currentYear = new Date().getFullYear()
+       var yas = Number(currentYear - dogumYili);
+       if(yas > 7 && yas <= 10){
+           console.log("ilk okula gidiyor")
+       }
+       else if(yas > 10 && 15 > yas ){
+        console.log( "Ortaokula gidiyor" );
+       }
+       else if(yas >= 15 && 18 > yas){
+        console.log( "Lise'ye gidiyor" );
+       }
+       else{
+           console.log("Üniversiteye gidiyor");
+       }
+   </script>
+</body>
+</html>
